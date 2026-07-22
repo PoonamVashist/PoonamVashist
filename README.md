@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-header-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-header-light.svg">
-  <img alt="Poonam Vashist — Data Engineer and Technical Lead" src="./assets/profile-header-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-header-dark.svg?v=0287a4f">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-header-light.svg?v=0287a4f">
+  <img alt="Poonam Vashist — Data Engineer and Technical Lead" src="./assets/profile-header-light.svg?v=0287a4f" width="100%">
 </picture>
 
 <p align="left">
