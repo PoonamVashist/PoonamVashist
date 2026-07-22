@@ -17,8 +17,9 @@ ICONS = [
     "apachespark.svg",
     "delta-lake.svg",
     "azure.svg",
-    "microsoft-fabric.svg",
     "apacheairflow.svg",
+    "snowflake.svg",
+    "aws.svg",
 ]
 
 

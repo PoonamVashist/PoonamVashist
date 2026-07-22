@@ -64,11 +64,12 @@ Evidence-led migration design covering architecture, cutover, validation, and op
   <img src="./assets/icons/apachespark.svg" alt="Apache Spark" title="Apache Spark" width="30" height="30">&nbsp;&nbsp;
   <img src="./assets/icons/delta-lake.svg" alt="Delta Lake" title="Delta Lake" width="30" height="30">&nbsp;&nbsp;
   <img src="./assets/icons/azure.svg" alt="Microsoft Azure" title="Microsoft Azure" width="30" height="30">&nbsp;&nbsp;
-  <img src="./assets/icons/microsoft-fabric.svg" alt="Microsoft Fabric" title="Microsoft Fabric" width="30" height="30">&nbsp;&nbsp;
-  <img src="./assets/icons/apacheairflow.svg" alt="Apache Airflow" title="Apache Airflow" width="30" height="30">
+  <img src="./assets/icons/apacheairflow.svg" alt="Apache Airflow" title="Apache Airflow" width="30" height="30">&nbsp;&nbsp;
+  <img src="./assets/icons/snowflake.svg" alt="Snowflake" title="Snowflake" width="30" height="30">&nbsp;&nbsp;
+  <img src="./assets/icons/aws.svg" alt="Amazon Web Services" title="Amazon Web Services" width="30" height="30">
 </p>
 
-`Databricks` · `Python` · `SQL` · `PySpark` · `Delta Lake` · `Azure` · `Microsoft Fabric` · `Apache Airflow`
+`Databricks` · `Python` · `SQL` · `PySpark` · `Delta Lake` · `Azure` · `Apache Airflow` · `Snowflake` · `AWS`
 
 <details>
 <summary><strong>How I approach data engineering</strong></summary>
