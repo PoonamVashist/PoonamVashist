@@ -28,7 +28,7 @@
   <rect x="1" y="1" width="998" height="318" rx="22" fill="url(#grid)"/>
   <rect x="52" y="48" width="5" height="224" rx="2.5" fill="#58a6ff"/>
 
-  <text x="84" y="77" fill="#8b949e" font-size="14" font-weight="600" letter-spacing="2.6">DATA PLATFORM ENGINEERING</text>
+  <text x="84" y="77" fill="#8b949e" font-size="14" font-weight="600" letter-spacing="2.6">DATA ENGINEERING AND AI</text>
   <text x="84" y="137" fill="#f0f6fc" font-size="46" font-weight="700">Poonam Vashist</text>
   <text x="84" y="178" fill="#f0f6fc" font-size="21" font-weight="600">Data Engineer &amp; Technical Lead</text>
   <text x="84" y="221" fill="#8b949e" font-size="18">Building governed lakehouse platforms and dependable data products—</text>
