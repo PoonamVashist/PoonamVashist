@@ -1,0 +1,10 @@
+{
+  "username": "PoonamVashist",
+  "limit": 2,
+  "sort": "created",
+  "direction": "desc",
+  "exclude": [
+    "PoonamVashist"
+  ],
+  "require_description": true
+}

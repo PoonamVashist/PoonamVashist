@@ -1,0 +1,50 @@
+[
+  {
+    "name": "PoonamVashist",
+    "html_url": "https://github.com/PoonamVashist/PoonamVashist",
+    "description": "GitHub profile repository",
+    "language": null,
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "created_at": "2026-07-22T08:00:00Z",
+    "updated_at": "2026-07-22T08:00:00Z",
+    "pushed_at": "2026-07-22T08:00:00Z"
+  },
+  {
+    "name": "databricks-global-hazard-intelligence",
+    "html_url": "https://github.com/PoonamVashist/databricks-global-hazard-intelligence",
+    "description": "An end-to-end Databricks lakehouse for ingesting, transforming, orchestrating, and visualizing global natural hazard data from USGS and NASA EONET.",
+    "language": "Python",
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "created_at": "2026-07-20T08:00:00Z",
+    "updated_at": "2026-07-22T08:00:00Z",
+    "pushed_at": "2026-07-22T08:00:00Z"
+  },
+  {
+    "name": "synapse-to-fabric-migration",
+    "html_url": "https://github.com/PoonamVashist/synapse-to-fabric-migration",
+    "description": "Synapse to Fabric migration plan",
+    "language": "Python",
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "created_at": "2026-07-13T08:00:00Z",
+    "updated_at": "2026-07-13T08:00:00Z",
+    "pushed_at": "2026-07-13T08:00:00Z"
+  },
+  {
+    "name": "example-fork",
+    "html_url": "https://github.com/PoonamVashist/example-fork",
+    "description": "A fork that must not appear",
+    "language": "Python",
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "created_at": "2026-07-12T08:00:00Z",
+    "updated_at": "2026-07-12T08:00:00Z",
+    "pushed_at": "2026-07-12T08:00:00Z"
+  }
+]

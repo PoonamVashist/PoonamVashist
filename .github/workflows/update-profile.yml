@@ -1,0 +1,48 @@
+name: Update recent public work
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "43 2 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-profile-readme
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Run updater tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Refresh recent repositories
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/update_recent_repos.py
+
+      - name: Commit the refreshed profile
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "Profile is already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: refresh recent public work"
+          git push
