@@ -37,6 +37,8 @@ def validate_config(config: dict[str, Any]) -> None:
         raise ValueError("profile.json 'sort' is not supported by the GitHub API.")
     if config.get("direction") not in {"asc", "desc"}:
         raise ValueError("profile.json 'direction' must be 'asc' or 'desc'.")
+    if not isinstance(config.get("repository_overrides", {}), dict):
+        raise ValueError("profile.json 'repository_overrides' must be an object.")
 
 
 def fetch_repositories(config: dict[str, Any]) -> list[dict[str, Any]]:
@@ -107,13 +109,25 @@ def format_date(value: Any) -> str:
         return "recently"
 
 
-def render_repository(repository: dict[str, Any]) -> str:
+def render_repository(
+    repository: dict[str, Any], override: dict[str, Any] | None = None
+) -> str:
+    override = override or {}
     name = html.escape(str(repository.get("name", "Repository")))
     url = html.escape(str(repository.get("html_url", "#")), quote=True)
     description = html.escape(
-        str(repository.get("description") or "Public repository by Poonam Vashist.")
+        str(
+            override.get("summary")
+            or repository.get("description")
+            or "Public repository by Poonam Vashist."
+        )
     )
-    language = html.escape(str(repository.get("language") or "Multiple technologies"))
+    stack = override.get("stack")
+    if not isinstance(stack, list) or not stack:
+        stack = [repository.get("language") or "Multiple technologies"]
+    stack_markup = " · ".join(
+        f"<code>{html.escape(str(technology))}</code>" for technology in stack
+    )
     updated = format_date(repository.get("pushed_at") or repository.get("updated_at"))
 
     return "\n".join(
@@ -123,19 +137,26 @@ def render_repository(repository: dict[str, Any]) -> str:
             "<br><br>",
             description,
             "<br><br>",
-            f"<sub><code>{language}</code> · Updated {updated}</sub>",
+            f"<sub>{stack_markup} · Updated {updated}</sub>",
             "</td>",
         ]
     )
 
 
-def render_recent_repositories(repositories: list[dict[str, Any]]) -> str:
+def render_recent_repositories(
+    repositories: list[dict[str, Any]],
+    overrides: dict[str, Any] | None = None,
+) -> str:
     if not repositories:
         return "_New public work will appear here automatically._"
 
+    overrides = overrides or {}
     rows: list[str] = []
     for index in range(0, len(repositories), 2):
-        cells = [render_repository(repo) for repo in repositories[index : index + 2]]
+        cells = [
+            render_repository(repo, overrides.get(str(repo.get("name", "")), {}))
+            for repo in repositories[index : index + 2]
+        ]
         rows.extend(["<tr>", *cells, "</tr>"])
 
     return "\n".join(["<table>", *rows, "</table>"])
@@ -191,7 +212,9 @@ def main() -> int:
             raise ValueError("Repository data must contain a JSON array.")
 
         selected = filter_repositories(repositories, config)
-        rendered = render_recent_repositories(selected)
+        rendered = render_recent_repositories(
+            selected, config.get("repository_overrides", {})
+        )
         changed = update_readme(args.readme, rendered, check=args.check)
     except (OSError, ValueError, RuntimeError, json.JSONDecodeError) as error:
         print(f"error: {error}", file=sys.stderr)

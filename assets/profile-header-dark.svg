@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320" role="img" aria-labelledby="title desc">
+  <title id="title">Poonam Vashist — Data Engineer and Technical Lead</title>
+  <desc id="desc">An animated lakehouse data flow moves from ingestion through Delta processing and quality controls to insight.</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#161b22"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#30363d" stroke-width="1" opacity=".55"/>
+    </pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <path id="flow-path" d="M620 161 C690 91 742 231 808 161 S910 91 960 161"/>
+  </defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .particle { filter: url(#glow); }
+    @media (prefers-reduced-motion: reduce) { .particle { display: none; } }
+  </style>
+
+  <rect x="1" y="1" width="998" height="318" rx="22" fill="url(#surface)" stroke="#30363d" stroke-width="2"/>
+  <rect x="1" y="1" width="998" height="318" rx="22" fill="url(#grid)"/>
+  <rect x="52" y="48" width="5" height="224" rx="2.5" fill="#58a6ff"/>
+
+  <text x="84" y="77" fill="#8b949e" font-size="14" font-weight="600" letter-spacing="2.6">DATA PLATFORM ENGINEERING</text>
+  <text x="84" y="137" fill="#f0f6fc" font-size="46" font-weight="700">Poonam Vashist</text>
+  <text x="84" y="178" fill="#f0f6fc" font-size="21" font-weight="600">Data Engineer &amp; Technical Lead</text>
+  <text x="84" y="221" fill="#8b949e" font-size="18">Building governed lakehouse platforms and dependable data products—</text>
+  <text x="84" y="249" fill="#8b949e" font-size="18">from raw events to trusted decisions.</text>
+
+  <g fill="none" stroke="#484f58" stroke-width="2">
+    <use href="#flow-path"/>
+  </g>
+
+  <g>
+    <circle cx="620" cy="161" r="28" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+    <circle cx="734" cy="161" r="28" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+    <circle cx="848" cy="161" r="28" fill="#10243e" stroke="#58a6ff" stroke-width="2"/>
+    <circle cx="960" cy="161" r="28" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+    <text x="620" y="165" fill="#c9d1d9" font-size="10" font-weight="700" text-anchor="middle">INGEST</text>
+    <text x="734" y="165" fill="#c9d1d9" font-size="10" font-weight="700" text-anchor="middle">DELTA</text>
+    <text x="848" y="165" fill="#58a6ff" font-size="10" font-weight="700" text-anchor="middle">QUALITY</text>
+    <text x="960" y="165" fill="#c9d1d9" font-size="10" font-weight="700" text-anchor="middle">INSIGHT</text>
+  </g>
+
+  <circle class="particle" r="5" fill="#58a6ff">
+    <animateMotion dur="5.8s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#flow-path"/>
+    </animateMotion>
+  </circle>
+  <circle class="particle" r="3.5" fill="#58a6ff" opacity=".55">
+    <animateMotion dur="5.8s" begin="-2.9s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#flow-path"/>
+    </animateMotion>
+  </circle>
+</svg>

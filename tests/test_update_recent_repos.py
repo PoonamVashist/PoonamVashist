@@ -58,6 +58,30 @@ class RecentRepositoriesTests(unittest.TestCase):
         self.assertIn("Reliable &lt;data&gt; &amp; pipelines", rendered)
         self.assertIn("Updated 2026-07-22", rendered)
 
+    def test_render_uses_editorial_summary_and_stack_override(self) -> None:
+        rendered = render_recent_repositories(
+            [
+                {
+                    "name": "platform",
+                    "html_url": "https://example.com/platform",
+                    "description": "Raw API description",
+                    "language": "Python",
+                    "pushed_at": "2026-07-22T12:00:00Z",
+                }
+            ],
+            {
+                "platform": {
+                    "summary": "Editorial project summary",
+                    "stack": ["Python", "Databricks", "Delta Lake"],
+                }
+            },
+        )
+
+        self.assertIn("Editorial project summary", rendered)
+        self.assertNotIn("Raw API description", rendered)
+        self.assertIn("<code>Databricks</code>", rendered)
+        self.assertIn("<code>Delta Lake</code>", rendered)
+
     def test_update_is_idempotent(self) -> None:
         initial = f"Before\n{START_MARKER}\nold\n{END_MARKER}\nAfter\n"
         rendered = "<table>\n</table>"

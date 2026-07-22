@@ -6,5 +6,23 @@
   "exclude": [
     "PoonamVashist"
   ],
-  "require_description": true
+  "require_description": true,
+  "repository_overrides": {
+    "databricks-global-hazard-intelligence": {
+      "summary": "Production-minded lakehouse for natural-hazard ingestion, orchestration, governance, and AI/BI delivery.",
+      "stack": [
+        "Python",
+        "Databricks",
+        "Delta Lake"
+      ]
+    },
+    "synapse-to-fabric-migration": {
+      "summary": "Evidence-led migration design covering architecture, cutover, validation, and operational readiness.",
+      "stack": [
+        "Python",
+        "T-SQL",
+        "Microsoft Fabric"
+      ]
+    }
+  }
 }

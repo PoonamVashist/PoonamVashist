@@ -1,31 +1,38 @@
-# Poonam Vashist
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-header-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-header-light.svg">
+  <img alt="Poonam Vashist — Data Engineer and Technical Lead" src="./assets/profile-header-light.svg" width="100%">
+</picture>
 
-**Data Engineer & Technical Lead**
+<p align="left">
+  <a href="https://www.linkedin.com/in/poonamvashist1/"><strong>LinkedIn ↗</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/PoonamVashist?tab=repositories"><strong>Latest work ↗</strong></a>
+</p>
 
-Building reliable data platforms with Databricks, Python, and modern lakehouse architectures.
+<table>
+<tr>
+<td width="33%" valign="top">
+<strong>Lakehouse systems</strong>
+<br><br>
+<sub>Databricks · Delta Lake · Unity Catalog</sub>
+</td>
+<td width="33%" valign="top">
+<strong>Reliable pipelines</strong>
+<br><br>
+<sub>Quality · Idempotency · Observability</sub>
+</td>
+<td width="33%" valign="top">
+<strong>Modernization</strong>
+<br><br>
+<sub>Azure · Fabric · Migration architecture</sub>
+</td>
+</tr>
+</table>
 
-I focus on governed data pipelines, platform modernization, and turning complex data into dependable products that teams can understand, operate, and trust.
+## Selected work
 
-[LinkedIn](https://www.linkedin.com/in/poonamvashist1/) · [Public repositories](https://github.com/PoonamVashist?tab=repositories)
-
----
-
-## Areas of focus
-
-- **Databricks and lakehouse engineering** — designing governed, maintainable data layers from ingestion through consumption.
-- **Reliable data pipelines** — building for data quality, idempotency, observability, and operational recovery.
-- **Data-platform modernization** — translating legacy workloads into practical cloud data products with clear migration boundaries.
-
-## Engineering approach
-
-I prefer systems that make their assumptions, failure modes, and evidence visible.
-
-- **Trust by design.** Data quality and lineage are part of the architecture, not an afterthought.
-- **Reproducible delivery.** Code, configuration, validation, and operational guidance should travel together.
-- **Clarity before complexity.** A solution should be understandable to the people who will run and extend it.
-- **Honest engineering.** Prototypes, local validation, and production evidence should be clearly distinguished.
-
-## Recent public work
+<sub>Refreshed automatically from the newest public, non-fork repositories.</sub>
 
 <!-- RECENT-REPOS:START -->
 <table>
@@ -33,39 +40,52 @@ I prefer systems that make their assumptions, failure modes, and evidence visibl
 <td width="50%" valign="top">
 <strong><a href="https://github.com/PoonamVashist/databricks-global-hazard-intelligence">databricks-global-hazard-intelligence</a></strong>
 <br><br>
-An end-to-end Databricks lakehouse for ingesting, transforming, orchestrating, and visualizing global natural hazard data from USGS and NASA EONET.
+Production-minded lakehouse for natural-hazard ingestion, orchestration, governance, and AI/BI delivery.
 <br><br>
-<sub><code>Python</code> · Updated 2026-07-22</sub>
+<sub><code>Python</code> · <code>Databricks</code> · <code>Delta Lake</code> · Updated 2026-07-22</sub>
 </td>
 <td width="50%" valign="top">
 <strong><a href="https://github.com/PoonamVashist/synapse-to-fabric-migration">synapse-to-fabric-migration</a></strong>
 <br><br>
-Synapse to Fabric migration plan
+Evidence-led migration design covering architecture, cutover, validation, and operational readiness.
 <br><br>
-<sub><code>Python</code> · Updated 2026-07-13</sub>
+<sub><code>Python</code> · <code>T-SQL</code> · <code>Microsoft Fabric</code> · Updated 2026-07-13</sub>
 </td>
 </tr>
 </table>
 <!-- RECENT-REPOS:END -->
 
-<sub>This section refreshes automatically from the newest public, non-fork repositories.</sub>
+## Core stack
 
-## Core technologies
+<p>
+  <img src="./assets/icons/databricks.svg" alt="Databricks" title="Databricks" width="30" height="30">&nbsp;&nbsp;
+  <img src="./assets/icons/python.svg" alt="Python" title="Python" width="30" height="30">&nbsp;&nbsp;
+  <img src="./assets/icons/sql.svg" alt="SQL" title="SQL" width="30" height="30">&nbsp;&nbsp;
+  <img src="./assets/icons/apachespark.svg" alt="Apache Spark" title="Apache Spark" width="30" height="30">&nbsp;&nbsp;
+  <img src="./assets/icons/delta-lake.svg" alt="Delta Lake" title="Delta Lake" width="30" height="30">&nbsp;&nbsp;
+  <img src="./assets/icons/azure.svg" alt="Microsoft Azure" title="Microsoft Azure" width="30" height="30">&nbsp;&nbsp;
+  <img src="./assets/icons/microsoft-fabric.svg" alt="Microsoft Fabric" title="Microsoft Fabric" width="30" height="30">&nbsp;&nbsp;
+  <img src="./assets/icons/apacheairflow.svg" alt="Apache Airflow" title="Apache Airflow" width="30" height="30">
+</p>
 
 `Databricks` · `Python` · `SQL` · `PySpark` · `Delta Lake` · `Azure` · `Microsoft Fabric` · `Apache Airflow`
 
 <details>
-<summary><strong>More about how I work</strong></summary>
+<summary><strong>How I approach data engineering</strong></summary>
 
 <br>
 
-- I turn ambiguous data problems into bounded architectures with explicit decisions and trade-offs.
-- I use tests, reconciliation, and validation evidence to make data behaviour verifiable.
-- I treat documentation, recovery guidance, and deployment configuration as part of the engineering product.
-- I value solutions that remain maintainable after the initial delivery.
+- **Trust by design.** Data quality, lineage, and failure handling belong in the architecture—not in a post-delivery checklist.
+- **Reproducible delivery.** Code, configuration, validation evidence, and operational guidance should travel together.
+- **Clarity before complexity.** The people operating and extending a platform should be able to understand its boundaries and trade-offs.
+- **Honest engineering.** Prototypes, local validation, and production evidence should be clearly distinguished.
 
 </details>
 
-## Connect
+---
 
-The best place to connect with me is [LinkedIn](https://www.linkedin.com/in/poonamvashist1/).
+<sub>
+  <a href="https://github.com/PoonamVashist?tab=repositories">Explore all repositories</a>
+  &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/poonamvashist1/">Connect on LinkedIn</a>
+</sub>

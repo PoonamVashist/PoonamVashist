@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-labelledby="title">
+  <title id="title">Delta Lake</title>
+  <path fill="#7d8590" d="M12 2 2 21h20L12 2Zm0 5.1L18.7 19H5.3L12 7.1Z"/>
+  <path fill="#7d8590" d="m12 10-4.2 7h8.4L12 10Zm0 3.8.8 1.2h-1.6l.8-1.2Z" opacity=".62"/>
+</svg>
